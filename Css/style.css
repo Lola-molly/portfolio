@@ -52,6 +52,9 @@ header nav ul{
 #menu-icon { 
     display: none;
 }
+.coolburgermenu{
+    display: none;
+}
 header nav ul li a{
     font-size: 15px;
     color: #3e3e3e;
@@ -62,7 +65,6 @@ header nav ul li a{
 header nav ul li a:hover{
     color: rgb(122, 50, 122);
 }
-
 
 section.hero{
     position: relative;
@@ -112,15 +114,18 @@ section.hero img{
     max-width: 100%;
     border-radius: 92px;
     background-color: rgb(122, 50, 122);
+    text-align: center;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+}
+.hero-content button a{
     color: #fff;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.4;
     line-height: 24px;
-    text-align: center;
-    text-transform: uppercase;
-    border: 0;
-    cursor: pointer;
+    text-decoration: none;
 }
 .hero-content button:hover{
     color: rgb(122, 50, 122);
@@ -128,10 +133,10 @@ section.hero img{
     border: 1px solid rgb(122, 50, 122);
 }
 
-article.best-sellers{
+article.code-screenshots{
     padding-top: 80px;
 }
-article.best-sellers h2{
+article.code-screenshots h2{
     text-align: center;
     font-size: 34px;
     letter-spacing: 0.85px;
@@ -140,20 +145,20 @@ article.best-sellers h2{
     margin: 0;
     margin-bottom: 14px;
 }
-article.best-sellers hr{
+article.code-screenshots hr{
     border: none;
     border-top: 5px solid rgb(122, 50, 122);
     width: 66px;
 }
 
-.product-section{
+.code-sc{
     margin-top: 76px;
     padding: 0 8px;
     display: flex;
     justify-content: space-around;
     align-items: baseline;
 }
-.product{
+.code{
     border-radius: 8px;
     border: 1px solid #DDD;
     width: 33%;
@@ -163,13 +168,13 @@ article.best-sellers hr{
     cursor: pointer;
     position: relative;
 }
-.product img{
+.code img{
     max-width: 100%;
 }
-.product-info {
+.code-info {
     margin-top: 50px;
 }
-.product-info .categories {
+.code-info .categories {
     color: rgb(122, 50, 122);
     font-weight: normal;
     font-size: 14px;
@@ -178,7 +183,7 @@ article.best-sellers hr{
     margin-bottom: 8px;
     margin-top: 0;
 }
-.product-info .title {
+.code-info .title {
     font-size: 20px;
     letter-spacing: 0.5px;
     line-height: 26px;
@@ -187,34 +192,46 @@ article.best-sellers hr{
     margin-top: 0;
 
 }
-.product-info .price {
-    font-size: 28px;
+.code-info .code-using {
+    font-size: 18px;
     font-weight: bold;
     letter-spacing: 0.7px;
-    line-height: 30px;
+    line-height: 21px;
     margin-bottom: 16px;
     margin-top: 0;
 }
-.product-info button {
+.code-info button {
     height: 50px;
     width: 219.5px;
     border: 1px solid #000;
     background-color: white;
     border-radius: 220px;
+    cursor: pointer;
+}
+.code-info button{
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.4px;
     line-height: 24px;
-    cursor: pointer;
-}
-.product:hover .product-info button {
-    border: 1px solid rgb(122, 50, 122);
     background-color: rgb(122, 50, 122);
+}
+.code-info button a{
+    text-decoration: none;
     color: white;
 }
-.new::before{
-    content: "new";
+.code:hover .code-info button {
+    border: 1px solid rgb(122, 50, 122);
+    background-color: #fff;
+    color: rgb(122, 50, 122);
+}
+.code:hover .code-info button a{
+    background-color: #fff;
+    color: rgb(122, 50, 122);
+}
+
+.Recent::before{
+    content: "Recent";
     background-color: red;
     color: #fff;
     font-size: 14px;
@@ -228,27 +245,28 @@ article.best-sellers hr{
     top: 12px;
     right: 12px;
 }
-.discounted-price{
+.updated-code{ 
     color: #ec1c1c;
+    line-height: 0;
 }
-.original-price{
+.old-code{
     color: #9b9b9b;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: normal;
     letter-spacing: 0.4px;
-    line-height: 30px;
+    line-height: 0px;
     text-decoration: line-through;
 }
 
 
-aside.newsletter{
+aside.learning{
     background-color: rgb(220, 220, 220);
     max-width: 955px;
     text-align: center;
     padding: 72px 0;
     margin: 80px auto;
 }
-aside.newsletter h3 {
+.learning-questions h3 {
     font-size: 24px;
     letter-spacing: 0.6px;
     line-height: 42px;
@@ -256,14 +274,14 @@ aside.newsletter h3 {
     margin-top: 0;
     margin-bottom: 10px;
 }
-aside.newsletter p {
+.learning-questions p {
     font-size: 16px;
     letter-spacing: 0.4px;
     line-height: 42px;
     margin-top: 0;
     margin-bottom: 20px;
 }
-aside.newsletter form input[type=email]{
+.learning-questions form input[type=text]{
     height: 50px;
     width: 326px;
     max-width: 80%;
@@ -278,14 +296,14 @@ aside.newsletter form input[type=email]{
     line-height: 21px;
     padding-left: 22px;
 }
-aside.newsletter form input[type=submit] {
+.learning-questions form input[type=submit] {
     height: 50px;
     width: 145px;
     max-width: 20%;
     box-sizing: border-box;
     border-radius: 0 60px 60px 0;
-    border: 1px solid #rgb(122, 50, 122);
-    background-color: #rgb(122, 50, 122);
+    border: 1px solid rgb(122, 50, 122);
+    background-color: rgb(122, 50, 122);
     color: #FFF;
     font-size: 14px;
     letter-spacing: 0.35px;
@@ -293,7 +311,7 @@ aside.newsletter form input[type=submit] {
     text-transform: uppercase;
     cursor: pointer;
 }
-aside.newsletter form input[type=submit]:hover {
+.learning-questions form input[type=submit]:hover {
     color: rgb(122, 50, 122);
     border: 1px solid rgb(122, 50, 122);
     background-color: #FFF;
@@ -331,6 +349,21 @@ li.list-title{
     margin-bottom: 20px;
     color: #fff;
 }
+footer .to-top{
+    background-color: #2b2b2b82;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .to-top a{
+    color: #fff;
+    text-decoration:none;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+}
 footer .copywrite-text{
     color: #fff;
     background-color: #2b2b2b;
@@ -343,18 +376,27 @@ footer .copywrite-text{
     justify-content: center;
     align-items: center;
 }
-.contact-details img{
+.page-options img{
     max-width: 40%;
     padding-left: 5px;
     margin: 10px;
     border-radius: 5px;
     border: 2px solid green;
 }
-.contact-details{
+.page-options{
     background-color:rgba(216, 112, 147, 0.339);
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-size: 18px;
+    padding: 30%;
+}
+.page-options ul li{
+    list-style: none;
+}
+.page-options ul li a{
+    text-decoration: none;
+    display: flex;
     font-size: 18px;
 }
 .address{
@@ -367,4 +409,7 @@ footer .copywrite-text{
 }
 .address a{
     color: green;
+}
+.blog{
+
 }

@@ -26,52 +26,53 @@
         margin-bottom: 12px;
     }
         
-    .hero-content button {
+    .hero-content button a{
         font-size: 14px;
         letter-spacing: 0.35px;
         line-height: 21px;
     }
-    article.best-sellers {
+
+    article.code-screenshots {
         padding-top: 50px;
     }
     
-    article.best-sellers h2 {
+    article.code-screenshots h2 {
         font-size: 28px;
         letter-spacing: 0.7px;
         line-height: 38px;
         margin: 0 0 12px 0;
     }
 
-    article.best-sellers .product-section {
+    article.code-screenshots .code-sc {
         margin-top: 48px;
     }
 
-    article.best-sellers .product-section .product {
+    article.code-screenshots .code-sc .code {
         min-width: 220px; 
         margin: 17px 8px;
     }
 
-    article.best-sellers .product-section .product .product-info .categories {
+    article.code-screenshots .code-sc .code .code-info .categories {
         font-size: 12px;
         letter-spacing: 0.3px;
         line-height: 30px;
         margin-bottom: 5px;
     }
     
-    article.best-sellers .product-section .product .product-info .title {
+    article.code-screenshots .code-sc .code .code-info .title {
         font-size: 13px;
         letter-spacing: 0.5px;
         line-height: 18px;
         margin-bottom: 8px;
     }
     
-    article.best-sellers .product-section .product .product-info .price {
+    article.code-screenshots .code-sc .code .code-info .code-using {
         font-size: 16px;
         letter-spacing: 0.4px;
         line-height: 30px;
     }
     
-    article.best-sellers .product-section .product .product-info .price .original-price {
+    article.code-screenshots .code-sc .code .code-info .code-using .old-code {
         font-size: 9px;
         letter-spacing: 0.23px;
         line-height: 30px;
@@ -79,40 +80,40 @@
         line-height: 14px;
     }
     
-    article.best-sellers  .product .product-info button {
+    article.code-screenshots .code .code-info button {
         height: 40px;
         width: 180px;
         letter-spacing: 0.35px;
         line-height: 21px;
     }
     
-    aside.newsletter {
+    aside.learning {
         width: 881px;
         max-width: 100%;
         padding: 50px 0;
         margin: 70px auto;
     }
     
-    aside.newsletter h3 {
+    aside.learning-questions h3 {
         font-size: 22px;
         letter-spacing: 0.55px;
         line-height: 42px;
     }
     
-    aside.newsletter p {
+    aside.learning-questions p {
         font-size: 14px;
         letter-spacing: 0.35px;
         line-height: 42px;
         margin-bottom: 15px;
     }
         
-    aside.newsletter form input[type=email] {
+    aside.learning-questions form input[type=email] {
         font-size: 12px;
         letter-spacing: 0.3px;
         line-height: 18px;
     }
         
-    aside.newsletter form input[type=submit] {
+    aside.learning-questions form input[type=submit] {
         font-size: 12px;
         letter-spacing: 0.3px;
         line-height: 18px;

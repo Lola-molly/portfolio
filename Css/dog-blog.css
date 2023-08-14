@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}    
+header {
+    background-color: #2E94cc;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#title{
+    font-size: 24px;
+    letter-spacing: 0.6;
+    padding-left: 25px;
+}  
+#menu-icon{
+    display: none;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+header nav li a{
+    text-decoration: none;
+    margin-right: 20px;
+    letter-spacing: 0.5; 
+}
+article{
+    width: 850px;
+    margin: auto;
+    padding: 8px;
+    padding-top: 70px;
+}
+#image-section{
+    text-align: center;
+}
+img{
+    max-width: 90%;
+    margin: auto;
+}
+#post-author {
+    color: #6c6c6c;
+    font-size: 12px;
+    line-height: 18px;
+}
+#share-post, #links-title{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 22px;
+}
+#title-section{
+    margin: 40px;
+}
+#title-section h2{
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 52px;
+    line-height: 58px;
+    letter-spacing: 1.3; 
+}
+#content-section{
+    max-width: 680px;
+    margin: auto;
+}
+#content-section a:visited{
+    color: red;
+}
+.uppercase{
+    text-transform:uppercase;
+}
+#blog-video{
+    text-align: center;
+    margin: 50px 0;
+}
+footer{
+    background-color: lightgray;
+    max-width: 680px;
+    margin: auto;
+    padding: 20px 15px;
+    margin-bottom: 70px;
+}
+#links-title{
+    margin-bottom: 12px;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer ul a{
+    color:#2E94cc;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+footer ul li{
+    margin-bottom: 12px;
+}
+footer ul li:last-of-type{
+    margin-bottom: 0;
+}
+nav{
+    text-align: center;
+    margin-bottom: 20px;
+}
+nav a{
+    text-decoration: none;
+}

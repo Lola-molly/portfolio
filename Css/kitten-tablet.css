@@ -1,0 +1,45 @@
+@media(max-width:960px){
+    header {
+        padding: 10px;
+        background-color: blueviolet;
+    }
+
+    header h1 {
+        padding-left: 10px;
+        font-size: 24px;
+    }
+
+    header nav ul li a {
+        padding-right: 6px;
+        font-size: 14px;
+    }
+
+    body main {
+        width: 80%;
+        padding-main: 30px;
+    }
+    body h2{
+        font-size: 20px;
+    }
+    body h3{
+        font-size: 18px;
+    }
+    main article footer {
+        margin:10px 0;
+    }
+
+    #article-footer{
+        display: flex;
+        align-items: center;
+        margin: 15px;
+    }
+
+    main article footer img {
+        padding-right: 10px;
+    }
+
+    footer section {
+        padding-right: 25px;
+    }
+
+}   

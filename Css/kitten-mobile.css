@@ -1,0 +1,42 @@
+@media(max-width:560px){
+    header{
+        background-color: darkorange;
+        padding: 8px;
+        flex-direction: column;
+    }
+
+    header h1 {
+        padding-left: 8px;
+        font-size: 16px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+    }
+
+    body main {
+        padding-main: 20px;
+        flex-direction: column;
+    }
+    body h2{
+        font-size: 20px;
+    }
+    body p{
+    font-size: 14px;
+    }
+    main article footer {
+        margin:8px 0;
+    }
+    body > footer{
+        align-items: center;
+    }
+    #footer-links {
+        flex-direction:column;
+        align-items: center;
+    }
+
+}

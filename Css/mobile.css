@@ -6,9 +6,12 @@
         font-size: 18px;
     }
 
-    header .logo .blue-dot {
+    header .logo .purple-dot {
         width: 7px;
         height: 7px;
+    }
+    #menu-icon { 
+        display: inline;
     }
     .hero-content{
         position:static;
@@ -24,65 +27,66 @@
     }
     
     .hero-content button {
+        width: 196px;
+        margin: auto;    
+    }
+    .hero-content button a{
         font-size: 14px;
         letter-spacing: 0.35px;
         line-height: 21px;
-        width: 196px;
-        margin: auto;
-        
     }
     .hero-content p{
         display: none;
     }
 
-    article.best-sellers {
+    article.code-screenshots {
         padding-top: 64px;
     }
     
-    article.best-sellers .product-section .product {
+    article.code-screenshots .code-sc .code {
         width: 82%;
         max-width: 360px;
     }
 
-    article.best-sellers h2 {
+    article.code-screenshots h2 {
         font-size: 36px;
         letter-spacing: 0.6px;
         line-height: 38px;
         margin: 0 0 16px 0;
     }
 
-    article.best-sellers hr {
+    article.code-screenshots hr {
         border-top: 4px solid #3E50E5;
         width: 40px;
     }
 
-    article.best-sellers .product-section {
+    article.code-screenshots .code-sc {
         margin-top: 42px;
     }
     
-    article.best-sellers .product-section .product .product-info .categories {
+    article.code-screenshots .code-sc .code .code-info .categories {
         margin-bottom: 7px;
     }
     
-    article.best-sellers .product-section .product .product-info .title {
+    article.code-screenshots .code-sc .code .code-info .title {
         font-size: 14px;
         letter-spacing: 0.54px;
         line-height: 18px;
     }
     
-    article.best-sellers .product-section .product .product-info .price {
+    article.code-screenshots .code-sc .code .code-info .code-using {
         font-size: 20px;
         font-weight: 700;
         letter-spacing: 0.5px;
     }
     
-    article.best-sellers .product-section .product .product-info .price .original-price {
+    article.code-screenshots .code-sc .code .code-info .code-using .old-code {
         font-size: 11px;
         letter-spacing: 0.28px;
         line-height: 20px;
     }
     
-    article.best-sellers .product-section .product .product-info button {
+    article.code-screenshots .code-sc .code .code-info button {
         height: 36px;
         width: 146px;
         font-size: 12px;
@@ -90,16 +94,16 @@
         line-height: 18px;
     }
 
-    aside.newsletter {
+    aside.learning {
         padding: 44px 0;
         margin: 60px auto;
     }
 
-    aside.newsletter form input[type=email] {
+    aside.learning-questions form input[type=email] {
         max-width: 65%;
     }
     
-    aside.newsletter form input[type=submit] {
+    aside.learning-questions form input[type=submit] {
         max-width: 30%;
     }
 

@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  padding: 16px;
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  padding-left: 16px;
+  color: white;
+}
+
+header nav ul {
+  margin: 0;
+  height: 100%;
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li a {
+  padding-right: 8px;
+  color: white;
+}
+
+body main {
+  margin: auto;
+  width: 60%;
+  display: flex;
+}
+
+main article footer {
+  margin: 16px 0;
+  display: flex;
+}
+
+main article footer img {
+  width: 100%;
+  padding-right: 16px;
+}
+
+body > footer {
+  padding: 32px;
+  background-color: dodgerblue;
+  color: white;
+}
+
+footer section {
+  padding-right: 32px;
+}
+
+footer section nav ul {
+  margin: 0;
+  list-style: none;
+}
+
+footer section nav ul li a {
+  color: white;
+}
+
+#footer-links {
+  display: flex;
+}
+
+#footer-links section {
+  margin-right: 20px;
+}

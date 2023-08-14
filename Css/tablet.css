@@ -1,6 +1,5 @@
 @media(max-width: 960px){
 
-
     .container {
         max-width: 92%;
     }
@@ -9,7 +8,7 @@
         font-size: 24px;
     }
     header nav ul li{
-        display:none;
+        display:none; f
     }
     #menu-icon { 
         display:inline-block;
@@ -26,67 +25,66 @@
         line-height: 24px;
     }
     
-    .hero-content button {
+    .hero-content button a{
         font-size: 14px;
         letter-spacing: 0.35px;
         line-height: 21px;
-        width: 196px;
-        
+        width: 196px;  
     }
 
-    article.best-sellers {
+    article.code-screenshots {
         padding-top: 50px;
     }
 
-    article.best-sellers .container{
+    article.code-screenshots .container{
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    article.best-sellers h2 {
+    article.code-screenshots h2 {
         font-size: 28px;
         letter-spacing: 0.7px;
         line-height: 38px;
         margin: 0 0 12px 0;
     }
 
-    article.best-sellers .product-section {
+    article.code-screenshots .code-sc {
         margin-top: 48px;
         }
 
-    article.best-sellers .product-section .product {
+    article.code-screenshots .code-sc .code {
         min-width: 220px; 
         margin: 17px 8px;
     }
 
-    article.best-sellers .product-section .product .product-info .categories {
+    article.code-screenshots .code-sc .code .code-info .categories {
         font-size: 12px;
         letter-spacing: 0.3px;
         line-height: 30px;
         margin-bottom: 5px;
     }
     
-    article.best-sellers .product-section .product .product-info .title {
+    article.code-screenshots .code-sc .code .code-info .title {
         font-size: 13px;
         letter-spacing: 0.5px;
         line-height: 18px;
         margin-bottom: 8px;
     }
     
-    article.best-sellers .product-section .product .product-info .price {
+    article.code-screenshots .code-sc .code .code-info .code-using {
         font-size: 16px;
         letter-spacing: 0.4px;
         line-height: 30px;
     }
     
-    article.best-sellers .product-section .product .product-info .price .original-price {
+    article.code-screenshots .code-sc .code .code-info .code-using .old-code {
         font-size: 9px;
         letter-spacing: 0.23px;
         line-height: 30px;
         display: block;
         line-height: 14px;
     }
-    article.best-sellers .product-section .product .product-info button {
+    article.code-screenshots .code-sc .code .code-info button {
         height: 36px;
         width: 193px;
         font-size: 12px;
@@ -94,26 +92,26 @@
         line-height: 18px;
     }
 
-    article.best-sellers .product-section .product.new::before {
+    article.code-screenshots .code-sc .code .updated-code::before {
         font-size: 11px;
         font-weight: 700;
         letter-spacing: 0.27px;
         padding: 0px 12px;
     }
-    aside.newsletter {
+    aside.learning {
         width: 100%;
         max-width: 100%;
         padding: 50px 0;
         margin: 50px auto;
     }
     
-    aside.newsletter h3 {
+    aside.learning-questions h3 {
         font-size: 22px;
         letter-spacing: 0.55px;
         line-height: 42px;
     }
     
-    aside.newsletter p {
+    aside.learning-questions p {
         font-size: 14px;
         letter-spacing: 0.35px;
         line-height: 42px;
@@ -123,8 +121,7 @@
         padding: 50px 0;
     }
     
-    footer
-    .container {
+    footer.container {
         max-width: 90%;
     }
 }

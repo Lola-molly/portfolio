@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/desktop.css">
-    <link rel="stylesheet" href="css/tablet.css">
-    <link rel="stylesheet" href="css/mobile.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/desktop.css">
+    <link rel="stylesheet" href="Css/tablet.css">
+    <link rel="stylesheet" href="Css/mobile.css">
     <script src="https://kit.fontawesome.com/9080b03655.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&family=Maven+Pro:wght@400;600&family=Noto+Sans+Cypro+Minoan&display=swap" rel="stylesheet">
-    <title>Music shop - Home</title> 
+    <title>Lola's coding portfolio - Home</title> 
+    <script>
+        const onEmailSubmit =  (event) => {
+            event.preventDefault();
+            const message = document.getElementById ("message").value;
+            window.open('mailto:ls2062@hw.ac.uk?body=' + encodeURIComponent(message)+"&subject=YouAreGreat");
+        };
+        const burgerMenuHandler = (event) => {
+            const burgermenu = document.querySelector(".coolburgermenu");
+            if (burgermenu.style.display === "none" || burgermenu.style.display === "") {
+                burgermenu.style.display = "block";    
+            } else {
+                burgermenu.style.display = "none";    
+            }
+        };
+    </script>
 </head>
 <body>
     <header> 
@@ -19,119 +33,126 @@
                 <a href="index.html">
                     <strong>Lola</strong> <span class="purple-dot"></span> Coding</a>
             </div>
-            <nav>
+            <nav> 
+                <!-- need java for mobile/tablet version -->
                 <ul>
                     <li><a href="about.html">About me</a></li>
-                    <li><a href="blogs.html">Blogs I've made</a></li>
-                    <li><a href="other.html">Something else</a></li>
-                    <li id="menu-icon"><i class="fa fa-bars fa-lg"></i></li>
+                    <li><a href="websites.html">Websites I've made</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="menu-icon" onclick="burgerMenuHandler(event)"><i class="fa fa-bars fa-lg"></i></li>
                 </ul>
+                <div class="coolburgermenu">
+                    <ul>
+                        <li id="menu-icon"><a href="about.html">About me</a></li>
+                        <li id="menu-icon"><a href="websites.html">Websites I've made</a></li>
+                        <li id="menu-icon"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
             </nav>         
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="top">
         <picture> 
-            <source media="(max-width: 576px)" srcset="images/coding-mobile.jpg" />
+            <source media="(max-width: 576px)" srcset="images/coding-mobile.jpg" alt="Girl coding at computer cartoon" />
             <source media="(max-width: 960px)" srcset="images/lolacodeclan-tablet.jpg" />
-            <img src="./images/lola-codeclan.jpg" alt="hero image- groupwork at codeclan, students with mentor">
+            <img src="./images/lola-codeclan.jpg" alt="groupwork at codeclan, students with mentor">
         </picture>
         <div class="hero-content">
             <div class="container">
-                <h1>Explore our new drumkit series</h1>
-                <p>Explore a huge range of Acoustic and Electronic Drum Kits from leading brands like Mapex, Pearl & more</p>
-                <button>See all drumkits</button>
+                <h1>Learnt & learning</h1>
+                <p>Over 5 years I have learnt python, CSS, HTML, C++, and more...</p>
+                <button><a href="#learning">Jump to learning</a></button>
             </div>
         </div>
     </section>
 
-    <article class="best-sellers">
-        <h2>Best Sellers</h2>
+    <article class="code-screenshots">
+        <h2>Some Evidence</h2>
         <hr/>
-        <section class="product-section container">
-            <div class="product new">
-                <img src="/images/gibson.jpg" alt="Gibson electric guitar">
-                <div class='product-info'>
-                    <h3 class='categories'> </h3class>Guitars, Gibson, Electric</h3>
-                    <h4 class="title">Gibson Les Paul</h4>
-                    <h5 class="price">£2.199.00</h5>
-                    <button>Add to bag</button>
+        <section class="code-sc container">
+            <div class="code">
+                <img src="/images/code-photo.jpg" alt="Screenshot of code displaying...">
+                <div class='code-info'>
+                    <h3 class='categories'> </h3class>HTML, CSS</h3>
+                    <h4 class="title">This code is...</h4>
+                    <h5 class="updated-code">media-type.css</h5>
+                    <h5 class="old-code">only available on one media type</h5>
+                    <button><a href="html-css.html">See more</a></button>
+                </div>
+            </div>
+            <div class="code">
+                <img src="/images/code-photo.jpg" alt="Screenshot of code displaying...">
+                <div class='code-info'>
+                    <h3 class='categories'> </h3class>HTML, img accessablity</h3>
+                    <h4 class="title">This code is...</h4>
+                    <h5 class="code-using">alt="image description"</h5>
+                    <button><a href="html-css.html">See more</a></button>
+                </div>
+            </div>
+            <div class="code Recent">
+                <img src="/images/code-photo.jpg" alt="Screenshot of code displaying...">
+                <div class='code-info'>
+                    <h3 class='categories'> </h3class>something else</h3>
+                    <h4 class="title">This code is...</h4>
+                    <h5 class="code-using">java something?</h5>
+                    <button><a href="html-css.html">See more</a></button>
                 </div>
             </div>
 
-            <div class="product new">
-                <img src="images/yamaha-keyboard.jpg" alt="product: Yamaha Electric Piano">
-            <div class="product-info">
-                <h3 class="categories">Pianos, Keyboards, Yamaha</h3>
-                <h4 class="title">Yamaha Electric Piano</h4>
-                <h5 class="price">£879.00</h5>
-                <button>Add to bag</button>
-            </div>
-        </div>
-
-        <div class="product">
-                <img src="images/pedal.jpg" alt="product: Bass Drive Guitar Pedal">
-            <div class="product-info">
-                <h3 class="categories">Effects, Accessories, Guitar Pedal</h3>
-                <h4 class="title">Bass Drive Guitar Pedal</h4>
-                <h5 class="price">
-                    <span class="discounted-price">£67.99</span>
-                    <span class="original-price">£89.99</span>
-                </h5>
-                <button>Add to bag</button>
-            </div>
-        </div>
         </section>
     </article>
-    <aside class="newsletter">
-        <h3>Newsletter Signup</h3>
-        <p>Subscribe now and don't miss a single deal!</p>
-        <form>
-            <input type="email" placeholder="Enter your email..." 
-            name="email">
-            <input type="submit" value="Subscribe">
+    <aside class="learning" id="learning">
+        <section class="learning-questions">
+        <h3>Questions:</h3>
+        <p>If you have any questions, please email me here:</p>
+        <form id="email-me-form" action="" onsubmit="onEmailSubmit(event)">
+            <input type="text" placeholder="Enter your message..." id="message">
+            <input type="submit" value="Email">
         </form>
+        </section>
     </aside>
     <footer>
         <section class="bottom-nav container">
             <nav>
                 <ul>
                     <li class="list-title">Categories</li>
-                    <li><a href="#">Guitars</a></li>
-                    <li><a href="#">Keyboards</a></li>
-                    <li><a href="#">Drumkits</a></li>
-                    <li><a href="#">Effects</a></li>
-                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">C++ and more</a></li>
                 </ul>
     
                 <ul>
-                    <li class="list-title">About Us</li>
-                    <li><a href="#">Our Story</a></li>
-                    <li><a href="#">Press</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Awards</a></li>
-                    <li><a href="#">Stores</a></li>
+                    <li class="list-title">About Me</li>
+                    <li><a href="#">Our Coding Story</a></li>
+                    <li><a href="#">Recently made website</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Qualifications</a></li>
+                    <li><a href="#">Somemthing else</a></li>
                 </ul>
     
                 <ul>
                     <li class="list-title">Social Media</li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Linkedin</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Youtube</a></li>
+                    <li><a href="mailto:ls2062@hw.ac.uk.com"> Email Me at HWU</a></li>
+                    <li><a href="https://linkedin.com" target="_blank">Linkedin</a></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
                 </ul>
     
-                <ul>
+                <!-- <ul> feel like another list looks nice but idk what to write
                     <li class="list-title">Customer Service</li>
                     <li><a href="#">Live Chat</a></li>
                     <li><a href="#">Contact Us</a></li>
                     <li><a href="#">Terms & Conditions</a></li>
                     <li><a href="#">Delivery & Returns</a></li>
                     <li><a href="#">Finance</a></li>
-                </ul>
+                </ul> -->
     
             </nav>
+        </section>
+        <section class="to-top">
+            <a href="#top">Back to top</a>
         </section>
     
         <section class="copywrite-text">
